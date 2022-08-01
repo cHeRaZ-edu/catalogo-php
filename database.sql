@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS db_catalogo;
+
+USE db_catalogo;
+
+CREATE TABLE IF NOT EXISTS articulo
+(
+    `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `codigo` VARCHAR(70) NOT NULL UNIQUE,
+    `nombre` VARCHAR(70) NULL,
+    `desc` VARCHAR(200) NULL
+) CHARACTER SET = "latin1";
